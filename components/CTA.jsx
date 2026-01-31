@@ -1,5 +1,6 @@
 import React from 'react'
-import AIButton from './ui/AIButton'
+import RequestQuoteBtn from './RequestQuoteBtn'
+
 
 const CTA = () => {
   return (
@@ -12,7 +13,7 @@ const CTA = () => {
             Thoughtfully designed interiors and joinery that blend beauty, function, and craftsmanship.
           </p>
 
-             <AIButton inverted={false} text="Request a Quote" />
+             <RequestQuoteBtn inverted = {false}/>
 
         </div>
       </section>

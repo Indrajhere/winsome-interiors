@@ -131,3 +131,16 @@ html {
     @apply bg-background text-foreground;
   }
 }
+
+@keyframes shutter {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-100%); }
+}
+
+.animate-shutter {
+  animation: shutter 3s ease-in-out forwards;
+  transform-origin: top;
+}
+
+/* Optional pulse effect on text */
+

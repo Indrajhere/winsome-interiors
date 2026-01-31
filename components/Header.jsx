@@ -2,10 +2,9 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
 import MobileMenu from "./MobileMenu";
-import AIButton from "./ui/AIButton";
 import Image from "next/image";
+import RequestQuoteBtn from "./RequestQuoteBtn";
 
 export default function Header() {
   const [hidden, setHidden] = useState(false);
@@ -71,7 +70,7 @@ export default function Header() {
 
         {/* Desktop button */}
         <div className="hidden sm:block">
-          <AIButton inverted={true} text="Request a Quote" />
+          <RequestQuoteBtn inverted={true} />
         </div>
 
         {/* Mobile menu */}

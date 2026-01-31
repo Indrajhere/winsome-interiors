@@ -15,11 +15,11 @@ export default function AboutUs() {
                     {/* Left Content */}
                     <div>
                           <div className="my-8 text-center">
-                    <h2 className="text-3xl md:text-6xl md:text-left font-light 
+                    <h2 className="text-4xl md:text-6xl md:text-left font-light 
          bg-gradient-to-r from-[#C6B98B] via-olive to-[#7A6B3A]
          bg-clip-text text-transparent"> <strong>W</strong>insome
                     </h2>
-                    <h2 className="text-3xl md:text-6xl md:text-left font-light 
+                    <h2 className="text-4xl md:text-6xl md:text-left font-light 
          bg-gradient-to-r from-[#C6B98B] via-olive to-[#7A6B3A]
          bg-clip-text text-transparent ml-2"> <strong>I</strong>nteriors
                     </h2>

@@ -1,4 +1,4 @@
-import AIButton from "./ui/AIButton";
+import RequestQuoteBtn from "./RequestQuoteBtn";
 
 export default function Hero() {
   return (
@@ -44,7 +44,8 @@ function HeroCard() {
         tailored for residential, commercial, and luxury spaces.
       </p>
 
-      <AIButton inverted={false} text="Request a Quote" />
+                   <RequestQuoteBtn inverted = {false}/>
+
     </div>
   );
 }
