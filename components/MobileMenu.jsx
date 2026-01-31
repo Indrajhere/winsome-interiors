@@ -1,16 +1,14 @@
 "use client";
-
 import { useState } from "react";
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
 import {
   Sheet,
   SheetContent,
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { Menu, X } from "lucide-react";
-import AIButton from "./ui/AIButton";
 import Image from "next/image";
+import RequestQuoteBtn from "./RequestQuoteBtn";
 
 export default function MobileMenu() {
   const [open, setOpen] = useState(false);
@@ -58,7 +56,8 @@ export default function MobileMenu() {
             About Us
           </Link>
 
-          <AIButton inverted={false} text="Request a Quote" />
+                       <RequestQuoteBtn inverted = {false}/>
+
          
         </nav>
       </SheetContent>
