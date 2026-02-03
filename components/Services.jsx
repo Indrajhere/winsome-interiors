@@ -1,8 +1,11 @@
+'use client'
 import { Card, CardContent } from "@/components/ui/card";
 import { services } from "@/lib/const";
 import AIBadge from "./ui/AIBadge";
+import { useRouter } from "next/navigation";
 
 export default function Services() {
+  const router = useRouter();
   return (
     <section
       id="services"
@@ -51,7 +54,9 @@ export default function Services() {
                   <p className="text-gray-600 text-sm leading-relaxed">
                     {service.description}
                   </p>
-                  <button className="mt-4 text-[var(--color-olive)] font-semibold text-sm hover:underline transition-all">
+                  <button
+                  onClick = {()=> router.push('/services')}
+                   className="mt-4 text-[var(--color-olive)] font-semibold text-sm hover:underline transition-all">
                     Learn More →
                   </button>
                 </div>
