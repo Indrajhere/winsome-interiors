@@ -3,6 +3,7 @@ import "./globals.css";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import ClientLayout from "./client-layout";
+import ScrollToTop from "@/components/ScrollToTop";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -16,7 +17,7 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "Winsome Interiors",
-  description: "Custom kitchens, cabinetry & interior solutions in Australia",
+  description: "Custom kitchens, cabinetry & interior solutions in South Australia",
 };
 
 
@@ -31,6 +32,7 @@ export default function RootLayout({ children }) {
           <main className="">
             {children}
           </main>
+          <ScrollToTop />
           <Footer />
         </ClientLayout>
 
