@@ -125,7 +125,7 @@ const Footer = () => {
           <p className="text-cream">
             © {currentYear} Winsome Interiors. All rights reserved.
           </p>
-          <div className="flex justify-center md:gap-12 gap-6 mt-4">
+          {/* <div className="flex justify-center md:gap-12 gap-6 mt-4">
             {policies.map((policy, index) => (
               <Link
                 key={index}
@@ -135,7 +135,7 @@ const Footer = () => {
                 {policy.label}
               </Link>
             ))}
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>
