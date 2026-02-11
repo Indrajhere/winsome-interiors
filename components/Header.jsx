@@ -45,28 +45,45 @@ export default function Header() {
     >
 
 
-      <div className="mx-auto container px-6 h-16 flex items-center justify-between">
+      <div className="mx-auto container px-6 min-h-24 md:py-6 h-16 flex items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="text-xl font-semibold text-olive">
+
+        <Link href="/" className="text-xl font-semibold text-olive hidden sm:block ml-10">
           <Image
-            src="/images/logo-text-cream.png"
+            src="/images/logo-cream-new.png"
             alt="Winsome Interiors Logo"
-            width={150}
-            height={50}
+            width={80}
+            height={60}
+          />
+        </Link>
+
+         <Link href="/" className="text-xl font-semibold text-olive sm:hidden">
+          <Image
+            src="/images/logo-cream-kitchen.png"
+            alt="Winsome Interiors Logo"
+            width={80}
+            height={60}
           />
         </Link>
 
         {/* Desktop nav */}
         <nav className="hidden sm:flex items-center gap-6 text-cream text-lg font-light">
+          <Link className={navLinkClasses} href="/">Home</Link>
           <Link
             className={navLinkClasses}
             href="/services">
             Services
           </Link>
-          <Link className={navLinkClasses} href="/products">Projects</Link>
           <Link className={navLinkClasses} href="/contact">Contact</Link>
           <Link className={navLinkClasses} href="/about">About Us</Link>
         </nav>
+
+        <div className="sm:hidden">
+          <Image src="/images/logo-cream-text.png"
+            alt="Winsome Interiors Logo"
+            width={180}
+             height={50} />
+        </div>
 
         {/* Desktop button */}
         <div className="hidden sm:block">

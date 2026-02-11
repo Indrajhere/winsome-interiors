@@ -4,6 +4,7 @@ import Link from "next/link";
 import {
   Sheet,
   SheetContent,
+  SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { Menu, X } from "lucide-react";
@@ -20,6 +21,8 @@ export default function MobileMenu() {
           <Menu className="h-6 w-6 text-sand" />
         </button>
       </SheetTrigger>
+      
+      <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
 
       <SheetContent
         side="top"
@@ -41,14 +44,16 @@ export default function MobileMenu() {
         {/* Menu */}
         <nav className="flex flex-col items-center justify-center h-[calc(100vh-4rem)] gap-8 text-xl text-olive font-medium">
 
-          <Image src="/images/logo-olive.png" alt="Winsome Interiors Logo" width={200} height={50} />
+          <Image src="/images/logo-olive-new.png" alt="Winsome Interiors Logo" width={200} height={50} />
+
+           <Link href="/" onClick={() => setOpen(false)}>
+            Home
+          </Link>
 
           <Link href="/services" onClick={() => setOpen(false)}>
             Services
           </Link>
-          <Link href="/projects" onClick={() => setOpen(false)}>
-            Projects
-          </Link>
+         
           <Link href="/contact" onClick={() => setOpen(false)}>
             Contact
           </Link>

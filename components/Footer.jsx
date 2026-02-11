@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { contactDetails, footerLinks, socialLinks } from "../lib/const";
 import Link from "next/link";
 import {
@@ -35,7 +36,11 @@ const Footer = () => {
           {/* Company Info */}
           <div>
             <div className="flex items-center gap-2 mb-6">
-              <img src="/images/logo-cream.png" alt="winsome Logo" className="h-20" />
+              <Image src="/images/logo-cream-new.png"
+               alt="winsome Logo" 
+               width = {140}
+               height ={120}
+               />
               {/* <h3 className="text-xl font-medium text-white">Antarnaa</h3> */}
             </div>
             <p className="mb-4 text-cream">
