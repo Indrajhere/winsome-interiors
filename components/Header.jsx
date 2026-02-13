@@ -52,7 +52,7 @@ export default function Header() {
           <Image
             src="/images/logo-cream-new.png"
             alt="Winsome Interiors Logo"
-            width={80}
+            width={100}
             height={60}
           />
         </Link>
@@ -81,7 +81,7 @@ export default function Header() {
         <div className="sm:hidden">
           <Image src="/images/logo-cream-text.png"
             alt="Winsome Interiors Logo"
-            width={180}
+            width={160}
              height={50} />
         </div>
 

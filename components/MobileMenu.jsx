@@ -44,7 +44,7 @@ export default function MobileMenu() {
         {/* Menu */}
         <nav className="flex flex-col items-center justify-center h-[calc(100vh-4rem)] gap-8 text-xl text-olive font-medium">
 
-          <Image src="/images/logo-olive-new.png" alt="Winsome Interiors Logo" width={200} height={50} />
+          <Image src="/images/logo-cream-new.png" alt="Winsome Interiors Logo" width={200} height={50} />
 
            <Link href="/" onClick={() => setOpen(false)}>
             Home
