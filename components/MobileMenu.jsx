@@ -61,7 +61,7 @@ export default function MobileMenu() {
             About Us
           </Link>
 
-                       <RequestQuoteBtn inverted = {false}/>
+                       <RequestQuoteBtn inverted = {false} onClick = {() => setOpen(false)} />
 
          
         </nav>
