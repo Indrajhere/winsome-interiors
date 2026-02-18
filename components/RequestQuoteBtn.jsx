@@ -16,7 +16,6 @@ const RequestQuoteBtn = ({ inverted, onClick = null }) => {
 
   };
 
-  const router = useRouter();
   return (
     <AIButton
       inverted={inverted}
