@@ -44,8 +44,8 @@ const Footer = () => {
               {/* <h3 className="text-xl font-medium text-white">Antarnaa</h3> */}
             </div>
             <p className="mb-4 text-cream">
-              Your trusted companion for authentic Ayurvedic wellness,
-              connecting you with expert practitioners for personalized care.
+              Your trusted partner for bespoke interior joinery,
+              crafting timeless spaces with precision and care.
             </p>
             <div className="flex gap-4">
               {Object.keys(socialLinks).map((platform, index) => (

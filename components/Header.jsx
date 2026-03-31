@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import Link from "next/link";
 import MobileMenu from "./MobileMenu";
 import Image from "next/image";
@@ -8,10 +8,8 @@ import RequestQuoteBtn from "./RequestQuoteBtn";
 
 export default function Header() {
   const [hidden, setHidden] = useState(false);
-  const [lastScrollY, setLastScrollY] = useState(0);
-
+    const lastScrollY = useRef(0);
   useEffect(() => {
-    let lastScrollY = window.scrollY;
 
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
@@ -21,18 +19,18 @@ export default function Header() {
         return;
       }
 
-      if (currentScrollY > lastScrollY) {
+      if (currentScrollY > lastScrollY.current) {
         setHidden(true); // scrolling down
       } else {
         setHidden(false); // scrolling up
       }
 
-      lastScrollY = currentScrollY;
+      lastScrollY.current = currentScrollY;
     };
 
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [lastScrollY]);
+  }, []);
 
 
   const navLinkClasses = `relative after:absolute after:left-0 after:bottom-0 after:h-[1.5px] after:w-0

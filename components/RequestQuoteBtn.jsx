@@ -6,6 +6,7 @@ import { useRouter } from 'next/navigation';
 
 
 const RequestQuoteBtn = ({ inverted, onClick = null }) => {
+  const router = useRouter();
 
   const handleClick = () => {
     if (onClick) {
@@ -15,7 +16,6 @@ const RequestQuoteBtn = ({ inverted, onClick = null }) => {
 
   };
 
-  const router = useRouter();
   return (
     <AIButton
       inverted={inverted}
