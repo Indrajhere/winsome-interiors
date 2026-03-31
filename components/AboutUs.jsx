@@ -81,7 +81,7 @@ export default function AboutUs() {
 
                         <img
                             src="/images/kitchen-pantry.jpg"
-                            alt="Custom interior craftsmanship"
+                            alt="kitchen-pantry-custom-interiors"
                             className="relative z-10 rounded-xl shadow-lg object-cover w-full h-[320px]"
                         />
                     </div>
