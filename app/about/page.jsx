@@ -1,3 +1,9 @@
+export const metadata = {
+  title: "About Winsome Interiors | Expert Cabinet Makers in Adelaide",
+  description:
+    "Learn about Winsome Interiors, experienced cabinet makers delivering high-quality interior joinery in South Australia.",
+};
+
 export default function AboutUs() {
   return (
     <section className="bg-cream py-12">

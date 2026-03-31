@@ -1,6 +1,13 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { services } from "@/lib/const";
 
+
+export const metadata = {
+  title: "Interior Joinery Services in Adelaide | Kitchens, Wardrobes & Cabinetry",
+  description:
+    "Explore our interior joinery services in Adelaide including custom kitchens, wardrobes, and cabinetry solutions.",
+};
+
 export default function Services() {
     return (
         <section className="bg-cream py-12">

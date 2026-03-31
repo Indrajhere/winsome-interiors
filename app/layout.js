@@ -16,8 +16,27 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Winsome Interiors",
-  description: "Custom kitchens, cabinetry & interior solutions in South Australia",
+  metadataBase: new URL("https://www.winsomeinteriors.com.au"),
+  title: "Custom Kitchens & Interior Joinery in South Australia | Winsome Interiors",
+  description:
+    "Premium custom kitchens, cabinetry & interior joinery services in South Australia.",
+  keywords: [
+    "interior joinery Australia",
+    "custom kitchens Adelaide",
+    "cabinet makers South Australia",
+    "wardrobes Adelaide",
+  ],
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    title: "Winsome Interiors",
+    description:
+      "Custom kitchens, cabinetry & interior solutions in South Australia",
+    url: "https://www.winsomeinteriors.com.au",
+    siteName: "Winsome Interiors",
+    type: "website",
+  },
 };
 
 
